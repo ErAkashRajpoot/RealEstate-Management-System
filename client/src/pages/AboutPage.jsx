@@ -13,9 +13,9 @@ const AboutPageComponent = () => {
           <p>
             Property Plus is a real estate management platform that helps you to
             find and manage your rentals in one place. You can either register
-            as a property owner or a tenant. The property owner can post their
-            property and manage their tenants. The tenant can find properties to
-            rent.
+            as a property owner or a Buyer. The property owner can post their
+            property and manage their tenants. The buyer can find properties to
+            rent and buy.
           </p>
         </div>
         <div className="flex mt-6 justify-center flex-col md:flex-row">
@@ -40,13 +40,13 @@ const AboutPageComponent = () => {
             <img src={about2} alt="" className="max-w-sm" />
           </div>
           <div className="md:w-1/2">
-            <h4 className="font-bold">Tenant</h4>
+            <h4 className="font-bold">Buyer</h4>
             <div>
               <p>
                 The Tenant User can find available properties and contact
-                property owners for rental inquiries. They can save properties
+                property owners for buying, rental inquiries. They can save properties
                 to view later and view the details of potential properties. Once
-                they agree to rent a property, they can view and sign the rental
+                they agree to rent a property or buy a property, they can view and sign the rental
                 contract sent to them by the property owner. They can also view
                 the payment details, due dates, payment history and receive
                 payment reminders from the owner.

@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Backend real estate rental system",
+  "description": "Backend real estate management system",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \" npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sonam Rinzin Gurung",
+  "author": "Akash Rajpoot",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -26,6 +26,7 @@
     "he": "^1.2.0",
     "helmet": "^7.0.0",
     "jsonwebtoken": "^8.5.1",
+    "mongodb": "^6.15.0",
     "mongoose": "^6.8.0",
     "mongoose-slug-generator": "^1.0.4",
     "morgan": "^1.10.0",

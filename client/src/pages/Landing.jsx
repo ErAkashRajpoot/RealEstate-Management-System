@@ -41,9 +41,9 @@ const Landing = () => {
       <header className="flex m-1 shadow-sm">
         <Logo />
         <div className="flex flex-col justify-center ml-2">
-          <h5 className="font-display">Rent Manager</h5>
+          <h5 className="font-display">Property Manager</h5>
           <p className="hidden text-xs md:block md:text-sm">
-            Find and Manage your rentals in one place
+            Find and Manage your Properties in one place
           </p>
         </div>
       </header>
@@ -55,10 +55,10 @@ const Landing = () => {
             place
           </h1>
           <p className="mt-8 text-center text-gray-700 w-4/5 mx-auto">
-            A simple and easy to use platform for property owners and tenants to
+            A simple and easy to use platform for property owners and Buyers to
             manage their rental properties. Post your property and find your
-            next tenant if you are a property owner. Find your next rental
-            property if you are a tenant.
+            next Buyer if you are a property owner. Find your next
+            property if you are a Buyer.
           </p>
         </div>
         <div className="flex mt-8 gap-8 flex-wrap w-2/3 justify-center">
@@ -94,10 +94,10 @@ const Landing = () => {
             <div className="flex flex-col self-center mx-auto p-4 w-full">
               <h3 className="font-display mb-2">Are you a Property Owner?</h3>
               <p className="">
-                Post your property online for future tenants to view
+                Post your property online for future Buyer to view
               </p>
-              <p className="">Manage all your tenants in one place</p>
-              <p className="">Keep track of your tenant's payments</p>
+              <p className="">Manage all your properties in one place</p>
+              <p className="">Keep track of your Buyer's payments</p>
               <div className="flex justify-start mt-7">
                 <Button
                   onClick={useCallback(
@@ -146,9 +146,9 @@ const Landing = () => {
           <section className="flex gap-16 mt-5">
             <img className="hidden md:block" src={landingImg} alt="" />
             <div className="flex flex-col self-center mx-auto p-4 w-full">
-              <h3 className="font-display mb-2">Are you a tenant?</h3>
+              <h3 className="font-display mb-2">Are you a Buyer?</h3>
               <p className="">
-                Browse through all kinds of properties for rent
+                Browse through all kinds of properties for rent and buy
               </p>
               <p className="">Contact the Property Owners</p>
               <p className="">Keep track of your payments and due dates</p>
