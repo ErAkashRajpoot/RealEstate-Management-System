@@ -1,5 +1,0 @@
-- Vite
-- Tailwind CSS
-- MUI
-- Redux Toolkit
-- Socket.io
