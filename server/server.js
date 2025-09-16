@@ -55,10 +55,17 @@ app.use(mongoSanitize()); //prevents mongodb operator injection
 
 app.set("trust proxy", 1); //trust first proxy
 
+// Updated CORS configuration to include Netlify URL
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: [
+      'http://localhost:3000',
+      'https://realestatemanagementsys.netlify.app',
+      process.env.CLIENT_URL
+    ],
     credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
   })
 ); //to allow cross origin requests
 app.use(cookieParser()); //to parse cookies
@@ -114,10 +121,14 @@ const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
-// Socket setup
+// Updated Socket setup with Netlify URL
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL,
+    origin: [
+      'http://localhost:3000',
+      'https://realestatemanagementsys.netlify.app',
+      process.env.CLIENT_URL
+    ],
     credentials: true,
   },
 });
